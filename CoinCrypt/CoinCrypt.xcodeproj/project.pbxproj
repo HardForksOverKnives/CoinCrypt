@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38ED4ED31EB863EA004783A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ED4ED21EB863EA004783A4 /* AppDelegate.swift */; };
+		38ED4ED51EB863EA004783A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ED4ED41EB863EA004783A4 /* ViewController.swift */; };
+		38ED4ED81EB863EA004783A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38ED4ED61EB863EA004783A4 /* Main.storyboard */; };
+		38ED4EDA1EB863EA004783A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38ED4ED91EB863EA004783A4 /* Assets.xcassets */; };
+		38ED4EDD1EB863EA004783A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38ED4EDB1EB863EA004783A4 /* LaunchScreen.storyboard */; };
+		38ED4EE51EB864A0004783A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38ED4EE41EB864A0004783A4 /* GoogleService-Info.plist */; };
+		BFB608932DC17CED36ED0F2D /* Pods_CoinCrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C723C59B7751B430DE366FD /* Pods_CoinCrypt.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C723C59B7751B430DE366FD /* Pods_CoinCrypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinCrypt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38ED4ECF1EB863EA004783A4 /* CoinCrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinCrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38ED4ED21EB863EA004783A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		38ED4ED41EB863EA004783A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		38ED4ED71EB863EA004783A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		38ED4ED91EB863EA004783A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		38ED4EDC1EB863EA004783A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		38ED4EDE1EB863EA004783A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38ED4EE41EB864A0004783A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4FE1AF5436C10BADE6985BAF /* Pods-CoinCrypt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCrypt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCrypt/Pods-CoinCrypt.debug.xcconfig"; sourceTree = "<group>"; };
+		F7FEDA37E126266215AC757C /* Pods-CoinCrypt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCrypt.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCrypt/Pods-CoinCrypt.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38ED4ECC1EB863EA004783A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFB608932DC17CED36ED0F2D /* Pods_CoinCrypt.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38ED4EC61EB863EA004783A4 = {
+			isa = PBXGroup;
+			children = (
+				38ED4ED11EB863EA004783A4 /* CoinCrypt */,
+				38ED4ED01EB863EA004783A4 /* Products */,
+				CF1390D0E1E2162199E10878 /* Pods */,
+				CC114B4A6979239141660064 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		38ED4ED01EB863EA004783A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38ED4ECF1EB863EA004783A4 /* CoinCrypt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38ED4ED11EB863EA004783A4 /* CoinCrypt */ = {
+			isa = PBXGroup;
+			children = (
+				38ED4ED21EB863EA004783A4 /* AppDelegate.swift */,
+				38ED4ED41EB863EA004783A4 /* ViewController.swift */,
+				38ED4ED61EB863EA004783A4 /* Main.storyboard */,
+				38ED4ED91EB863EA004783A4 /* Assets.xcassets */,
+				38ED4EE41EB864A0004783A4 /* GoogleService-Info.plist */,
+				38ED4EDB1EB863EA004783A4 /* LaunchScreen.storyboard */,
+				38ED4EDE1EB863EA004783A4 /* Info.plist */,
+			);
+			path = CoinCrypt;
+			sourceTree = "<group>";
+		};
+		CC114B4A6979239141660064 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C723C59B7751B430DE366FD /* Pods_CoinCrypt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1390D0E1E2162199E10878 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FE1AF5436C10BADE6985BAF /* Pods-CoinCrypt.debug.xcconfig */,
+				F7FEDA37E126266215AC757C /* Pods-CoinCrypt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38ED4ECE1EB863EA004783A4 /* CoinCrypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38ED4EE11EB863EA004783A4 /* Build configuration list for PBXNativeTarget "CoinCrypt" */;
+			buildPhases = (
+				8659B5D66D124E19D75B0A3B /* [CP] Check Pods Manifest.lock */,
+				38ED4ECB1EB863EA004783A4 /* Sources */,
+				38ED4ECC1EB863EA004783A4 /* Frameworks */,
+				38ED4ECD1EB863EA004783A4 /* Resources */,
+				FE00D69A5A459F39B61D0D9E /* [CP] Embed Pods Frameworks */,
+				FA444659E5016B0963337357 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoinCrypt;
+			productName = CoinCrypt;
+			productReference = 38ED4ECF1EB863EA004783A4 /* CoinCrypt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38ED4EC71EB863EA004783A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = CoinCrypt;
+				TargetAttributes = {
+					38ED4ECE1EB863EA004783A4 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 38ED4ECA1EB863EA004783A4 /* Build configuration list for PBXProject "CoinCrypt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38ED4EC61EB863EA004783A4;
+			productRefGroup = 38ED4ED01EB863EA004783A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38ED4ECE1EB863EA004783A4 /* CoinCrypt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38ED4ECD1EB863EA004783A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38ED4EDD1EB863EA004783A4 /* LaunchScreen.storyboard in Resources */,
+				38ED4EE51EB864A0004783A4 /* GoogleService-Info.plist in Resources */,
+				38ED4EDA1EB863EA004783A4 /* Assets.xcassets in Resources */,
+				38ED4ED81EB863EA004783A4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8659B5D66D124E19D75B0A3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA444659E5016B0963337357 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinCrypt/Pods-CoinCrypt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE00D69A5A459F39B61D0D9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinCrypt/Pods-CoinCrypt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38ED4ECB1EB863EA004783A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38ED4ED51EB863EA004783A4 /* ViewController.swift in Sources */,
+				38ED4ED31EB863EA004783A4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		38ED4ED61EB863EA004783A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38ED4ED71EB863EA004783A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		38ED4EDB1EB863EA004783A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38ED4EDC1EB863EA004783A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38ED4EDF1EB863EA004783A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38ED4EE01EB863EA004783A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38ED4EE21EB863EA004783A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FE1AF5436C10BADE6985BAF /* Pods-CoinCrypt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoinCrypt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coincrypt.CoinCrypt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		38ED4EE31EB863EA004783A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7FEDA37E126266215AC757C /* Pods-CoinCrypt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoinCrypt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coincrypt.CoinCrypt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38ED4ECA1EB863EA004783A4 /* Build configuration list for PBXProject "CoinCrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38ED4EDF1EB863EA004783A4 /* Debug */,
+				38ED4EE01EB863EA004783A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38ED4EE11EB863EA004783A4 /* Build configuration list for PBXNativeTarget "CoinCrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38ED4EE21EB863EA004783A4 /* Debug */,
+				38ED4EE31EB863EA004783A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38ED4EC71EB863EA004783A4 /* Project object */;
+}

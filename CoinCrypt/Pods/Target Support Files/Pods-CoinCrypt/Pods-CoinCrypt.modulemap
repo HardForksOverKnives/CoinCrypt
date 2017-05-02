@@ -1,0 +1,6 @@
+framework module Pods_CoinCrypt {
+  umbrella header "Pods-CoinCrypt-umbrella.h"
+
+  export *
+  module * { export * }
+}
