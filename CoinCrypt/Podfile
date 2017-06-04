@@ -7,5 +7,7 @@ target 'CoinCrypt' do
 
   # Pods for CoinCrypt
   pod 'Firebase/Core'
+  pod 'Firebase/RemoteConfig'
+  pod 'coinbase-official'
 
 end

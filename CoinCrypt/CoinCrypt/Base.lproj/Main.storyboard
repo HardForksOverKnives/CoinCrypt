@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ExchangeO Auth View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoinCrypt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CCExchangeOAuthViewController" id="BYZ-38-t0r" customClass="CCExchangeOAuthViewController" customModule="CoinCrypt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,22 +21,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoinCrypt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OR7-GD-Uzk">
-                                <rect key="frame" x="148.5" y="323" width="78" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For the best experience, connect CoinCrypt with your Coinbase account." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6NI-DS-e2c">
+                                <rect key="frame" x="20" y="40" width="335" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LY-av-UGt">
+                                <rect key="frame" x="157.5" y="318" width="59" height="30"/>
+                                <state key="normal" title="Connect"/>
+                                <connections>
+                                    <action selector="connectCoinbaseButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jy0-wS-syr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOB-ZY-SVS">
+                                <rect key="frame" x="150" y="366" width="74" height="30"/>
+                                <state key="normal" title="No Thanks"/>
+                                <connections>
+                                    <action selector="declineCoinbaseButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hDY-Nl-lOr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7LY-av-UGt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8c7-mw-XOe"/>
+                            <constraint firstItem="6NI-DS-e2c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="DvY-0w-cDk"/>
+                            <constraint firstItem="uOB-ZY-SVS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NHe-K1-cua"/>
+                            <constraint firstItem="6NI-DS-e2c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="SDQ-Q2-Ed8"/>
+                            <constraint firstItem="7LY-av-UGt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bpT-4K-GVi"/>
+                            <constraint firstItem="uOB-ZY-SVS" firstAttribute="top" secondItem="7LY-av-UGt" secondAttribute="bottom" constant="18" id="fXY-rC-o4U"/>
+                            <constraint firstAttribute="trailing" secondItem="6NI-DS-e2c" secondAttribute="trailing" constant="20" id="oio-yn-qJh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="gKN-Y6-RKN" kind="show" identifier="exchangeOAuth_mainScreen" id="WEX-0I-v5W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NXq-aT-dMu">
+            <objects>
+                <viewController storyboardIdentifier="homeScreen" id="gKN-Y6-RKN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l5Z-D7-l6C"/>
+                        <viewControllerLayoutGuide type="bottom" id="hos-bC-JbT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fpg-7i-smn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="main screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJc-0w-pUA">
+                                <rect key="frame" x="141" y="323" width="93" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OR7-GD-Uzk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ANq-qK-Cb8"/>
-                            <constraint firstItem="OR7-GD-Uzk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AaR-6e-9aR"/>
+                            <constraint firstItem="bJc-0w-pUA" firstAttribute="centerY" secondItem="Fpg-7i-smn" secondAttribute="centerY" id="7Hm-yn-vvJ"/>
+                            <constraint firstItem="bJc-0w-pUA" firstAttribute="centerX" secondItem="Fpg-7i-smn" secondAttribute="centerX" id="IpQ-iK-7Xd"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jwE-IV-kFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="785" y="266"/>
         </scene>
     </scenes>
 </document>

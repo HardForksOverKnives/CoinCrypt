@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import coinbase_official
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +20,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         FIRApp.configure()
+        let remoteConfig = FIRRemoteConfig.remoteConfig()
+        let remoteConfigSettings = FIRRemoteConfigSettings(developerModeEnabled: true)
+        remoteConfig.configSettings = remoteConfigSettings!
+        remoteConfig.setDefaultsFromPlistFileName("RemoteConfigDefaults")
+        
+        remoteConfig.fetch(withExpirationDuration: 20) { (status, error) -> Void in
+            if status == .success {
+                print("Config fetched!")
+                remoteConfig.activateFetched()
+            } else {
+                print("Config not fetched")
+                print("Error \(error!.localizedDescription)")
+            }
+        }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if (CoinbaseOAuth.isAppOAuthAuthenticationAvailable())
+        {
+            let vc = storyboard.instantiateViewController(withIdentifier: "CCExchangeOAuthViewController")
+            self.window?.rootViewController = vc
+        }
+        else
+        {
+            let vc = storyboard.instantiateViewController(withIdentifier: "homeScreen")
+            self.window?.rootViewController = vc
+        }
         
         return true
     }
@@ -45,5 +73,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        if url.scheme == "com.coincrypt.coincrypt.coinbase-oauth" {
+            let ccExchangeVC = self.window?.rootViewController as! CCExchangeOAuthViewController
+            ccExchangeVC.handleCoinbaseOAuthRedirect(url)
+            return true
+        }
+        else {
+            return false
+        }
+    }
 }
 

@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		381C055B1EDEA7DC0068F550 /* CCExchangeOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C055A1EDEA7DC0068F550 /* CCExchangeOAuthViewController.swift */; };
+		384D15F01EE134EC00AF3BC4 /* RemoteConfigKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384D15EF1EE134EC00AF3BC4 /* RemoteConfigKeys.swift */; };
+		38546C851ED542D000F7A8C6 /* coinbase_official.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38546C841ED542D000F7A8C6 /* coinbase_official.framework */; };
+		38B128B31EC2EDDF00BDCE07 /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38B128B21EC2EDDF00BDCE07 /* RemoteConfigDefaults.plist */; };
 		38ED4ED31EB863EA004783A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ED4ED21EB863EA004783A4 /* AppDelegate.swift */; };
-		38ED4ED51EB863EA004783A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ED4ED41EB863EA004783A4 /* ViewController.swift */; };
 		38ED4ED81EB863EA004783A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38ED4ED61EB863EA004783A4 /* Main.storyboard */; };
 		38ED4EDA1EB863EA004783A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38ED4ED91EB863EA004783A4 /* Assets.xcassets */; };
 		38ED4EDD1EB863EA004783A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38ED4EDB1EB863EA004783A4 /* LaunchScreen.storyboard */; };
@@ -18,9 +21,12 @@
 
 /* Begin PBXFileReference section */
 		1C723C59B7751B430DE366FD /* Pods_CoinCrypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinCrypt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		381C055A1EDEA7DC0068F550 /* CCExchangeOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCExchangeOAuthViewController.swift; sourceTree = "<group>"; };
+		384D15EF1EE134EC00AF3BC4 /* RemoteConfigKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteConfigKeys.swift; sourceTree = "<group>"; };
+		38546C841ED542D000F7A8C6 /* coinbase_official.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = coinbase_official.framework; path = "../../../../Library/Developer/Xcode/DerivedData/CoinCrypt-eaeyyiqbxgealifaxezfeauodlgi/Build/Products/Debug-iphonesimulator/coinbase-official/coinbase_official.framework"; sourceTree = "<group>"; };
+		38B128B21EC2EDDF00BDCE07 /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
 		38ED4ECF1EB863EA004783A4 /* CoinCrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinCrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38ED4ED21EB863EA004783A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		38ED4ED41EB863EA004783A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		38ED4ED71EB863EA004783A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38ED4ED91EB863EA004783A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38ED4EDC1EB863EA004783A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38546C851ED542D000F7A8C6 /* coinbase_official.framework in Frameworks */,
 				BFB608932DC17CED36ED0F2D /* Pods_CoinCrypt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,6 +49,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38150C341EE38830007DE4CE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				384D15EF1EE134EC00AF3BC4 /* RemoteConfigKeys.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		381C05571EDEA7440068F550 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				381C055A1EDEA7DC0068F550 /* CCExchangeOAuthViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		38B128B41EC2F16700BDCE07 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				38150C341EE38830007DE4CE /* Constants */,
+				38B128B21EC2EDDF00BDCE07 /* RemoteConfigDefaults.plist */,
+				38ED4EDE1EB863EA004783A4 /* Info.plist */,
+				38ED4EE41EB864A0004783A4 /* GoogleService-Info.plist */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		38ED4EC61EB863EA004783A4 = {
 			isa = PBXGroup;
 			children = (
@@ -63,13 +97,12 @@
 		38ED4ED11EB863EA004783A4 /* CoinCrypt */ = {
 			isa = PBXGroup;
 			children = (
+				381C05571EDEA7440068F550 /* ViewControllers */,
+				38B128B41EC2F16700BDCE07 /* Utility */,
 				38ED4ED21EB863EA004783A4 /* AppDelegate.swift */,
-				38ED4ED41EB863EA004783A4 /* ViewController.swift */,
 				38ED4ED61EB863EA004783A4 /* Main.storyboard */,
 				38ED4ED91EB863EA004783A4 /* Assets.xcassets */,
-				38ED4EE41EB864A0004783A4 /* GoogleService-Info.plist */,
 				38ED4EDB1EB863EA004783A4 /* LaunchScreen.storyboard */,
-				38ED4EDE1EB863EA004783A4 /* Info.plist */,
 			);
 			path = CoinCrypt;
 			sourceTree = "<group>";
@@ -77,6 +110,7 @@
 		CC114B4A6979239141660064 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				38546C841ED542D000F7A8C6 /* coinbase_official.framework */,
 				1C723C59B7751B430DE366FD /* Pods_CoinCrypt.framework */,
 			);
 			name = Frameworks;
@@ -126,6 +160,7 @@
 				TargetAttributes = {
 					38ED4ECE1EB863EA004783A4 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = PJ38E6T75T;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -154,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38ED4EDD1EB863EA004783A4 /* LaunchScreen.storyboard in Resources */,
+				38B128B31EC2EDDF00BDCE07 /* RemoteConfigDefaults.plist in Resources */,
 				38ED4EE51EB864A0004783A4 /* GoogleService-Info.plist in Resources */,
 				38ED4EDA1EB863EA004783A4 /* Assets.xcassets in Resources */,
 				38ED4ED81EB863EA004783A4 /* Main.storyboard in Resources */,
@@ -215,8 +251,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38ED4ED51EB863EA004783A4 /* ViewController.swift in Sources */,
 				38ED4ED31EB863EA004783A4 /* AppDelegate.swift in Sources */,
+				384D15F01EE134EC00AF3BC4 /* RemoteConfigKeys.swift in Sources */,
+				381C055B1EDEA7DC0068F550 /* CCExchangeOAuthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +379,7 @@
 			baseConfigurationReference = 4FE1AF5436C10BADE6985BAF /* Pods-CoinCrypt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PJ38E6T75T;
 				INFOPLIST_FILE = CoinCrypt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coincrypt.CoinCrypt;
@@ -355,6 +393,7 @@
 			baseConfigurationReference = F7FEDA37E126266215AC757C /* Pods-CoinCrypt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PJ38E6T75T;
 				INFOPLIST_FILE = CoinCrypt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coincrypt.CoinCrypt;
@@ -382,6 +421,7 @@
 				38ED4EE31EB863EA004783A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
