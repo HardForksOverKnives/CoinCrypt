@@ -9,5 +9,6 @@ target 'CoinCrypt' do
   pod 'Firebase/Core'
   pod 'Firebase/RemoteConfig'
   pod 'coinbase-official'
+  pod 'CocoaLumberjack/Swift'
 
 end

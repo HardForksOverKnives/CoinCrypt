@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 import coinbase_official
-
+import CocoaLumberjack
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,8 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
+    {
+        // setup logging
+        CCCocoaLumberJackManager.setup()
+        
         FIRApp.configure()
         let remoteConfig = FIRRemoteConfig.remoteConfig()
         let remoteConfigSettings = FIRRemoteConfigSettings(developerModeEnabled: true)

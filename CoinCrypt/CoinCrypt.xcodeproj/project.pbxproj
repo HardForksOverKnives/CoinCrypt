@@ -16,6 +16,7 @@
 		38ED4EDA1EB863EA004783A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38ED4ED91EB863EA004783A4 /* Assets.xcassets */; };
 		38ED4EDD1EB863EA004783A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38ED4EDB1EB863EA004783A4 /* LaunchScreen.storyboard */; };
 		38ED4EE51EB864A0004783A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38ED4EE41EB864A0004783A4 /* GoogleService-Info.plist */; };
+		38FE00731EE7D61700BD1A87 /* CCCocoaLumberJackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FE00721EE7D61700BD1A87 /* CCCocoaLumberJackManager.swift */; };
 		BFB608932DC17CED36ED0F2D /* Pods_CoinCrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C723C59B7751B430DE366FD /* Pods_CoinCrypt.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		38ED4EDC1EB863EA004783A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38ED4EDE1EB863EA004783A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38ED4EE41EB864A0004783A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		38FE00721EE7D61700BD1A87 /* CCCocoaLumberJackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCCocoaLumberJackManager.swift; sourceTree = "<group>"; };
 		4FE1AF5436C10BADE6985BAF /* Pods-CoinCrypt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCrypt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCrypt/Pods-CoinCrypt.debug.xcconfig"; sourceTree = "<group>"; };
 		F7FEDA37E126266215AC757C /* Pods-CoinCrypt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCrypt.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCrypt/Pods-CoinCrypt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 				38B128B21EC2EDDF00BDCE07 /* RemoteConfigDefaults.plist */,
 				38ED4EDE1EB863EA004783A4 /* Info.plist */,
 				38ED4EE41EB864A0004783A4 /* GoogleService-Info.plist */,
+				38FE00721EE7D61700BD1A87 /* CCCocoaLumberJackManager.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				38ED4ED31EB863EA004783A4 /* AppDelegate.swift in Sources */,
 				384D15F01EE134EC00AF3BC4 /* RemoteConfigKeys.swift in Sources */,
 				381C055B1EDEA7DC0068F550 /* CCExchangeOAuthViewController.swift in Sources */,
+				38FE00731EE7D61700BD1A87 /* CCCocoaLumberJackManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

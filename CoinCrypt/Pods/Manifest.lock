@@ -1,4 +1,7 @@
 PODS:
+  - CocoaLumberjack/Default (3.1.0)
+  - CocoaLumberjack/Swift (3.1.0):
+    - CocoaLumberjack/Default
   - coinbase-official (3.3.0):
     - coinbase-official/client (= 3.3.0)
     - coinbase-official/core (= 3.3.0)
@@ -33,11 +36,13 @@ PODS:
   - Protobuf (3.3.0)
 
 DEPENDENCIES:
+  - CocoaLumberjack/Swift
   - coinbase-official
   - Firebase/Core
   - Firebase/RemoteConfig
 
 SPEC CHECKSUMS:
+  CocoaLumberjack: 8311463ddf9ee86a06ef92a071dd656c89244500
   coinbase-official: 57de4952bdb85e16a8f99930c57e16505ff571ed
   Firebase: 4b66b5b59c43edac745b87f0c87e42cdd0279c13
   FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
@@ -47,6 +52,6 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   Protobuf: d582fecf68201eac3d79ed61369ef45734394b9c
 
-PODFILE CHECKSUM: 1eacc0f0d3f39ba52d332d1c119670be62a0c1cb
+PODFILE CHECKSUM: f54c3a61e008620d68a463e74bfbf4753192f15e
 
 COCOAPODS: 1.2.0
