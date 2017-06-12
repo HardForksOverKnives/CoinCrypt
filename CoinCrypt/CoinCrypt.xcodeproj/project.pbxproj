@@ -15,8 +15,8 @@
 		38ED4ED81EB863EA004783A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38ED4ED61EB863EA004783A4 /* Main.storyboard */; };
 		38ED4EDA1EB863EA004783A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38ED4ED91EB863EA004783A4 /* Assets.xcassets */; };
 		38ED4EDD1EB863EA004783A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38ED4EDB1EB863EA004783A4 /* LaunchScreen.storyboard */; };
-		38ED4EE51EB864A0004783A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38ED4EE41EB864A0004783A4 /* GoogleService-Info.plist */; };
 		38FE00731EE7D61700BD1A87 /* CCCocoaLumberJackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FE00721EE7D61700BD1A87 /* CCCocoaLumberJackManager.swift */; };
+		AAE46C001EEC24430045C0F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAE46BFF1EEC24430045C0F7 /* GoogleService-Info.plist */; };
 		BFB608932DC17CED36ED0F2D /* Pods_CoinCrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C723C59B7751B430DE366FD /* Pods_CoinCrypt.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,9 +32,9 @@
 		38ED4ED91EB863EA004783A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38ED4EDC1EB863EA004783A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38ED4EDE1EB863EA004783A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38ED4EE41EB864A0004783A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		38FE00721EE7D61700BD1A87 /* CCCocoaLumberJackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCCocoaLumberJackManager.swift; sourceTree = "<group>"; };
 		4FE1AF5436C10BADE6985BAF /* Pods-CoinCrypt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCrypt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCrypt/Pods-CoinCrypt.debug.xcconfig"; sourceTree = "<group>"; };
+		AAE46BFF1EEC24430045C0F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F7FEDA37E126266215AC757C /* Pods-CoinCrypt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCrypt.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCrypt/Pods-CoinCrypt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,8 +72,8 @@
 			children = (
 				38150C341EE38830007DE4CE /* Constants */,
 				38B128B21EC2EDDF00BDCE07 /* RemoteConfigDefaults.plist */,
+				AAE46BFF1EEC24430045C0F7 /* GoogleService-Info.plist */,
 				38ED4EDE1EB863EA004783A4 /* Info.plist */,
-				38ED4EE41EB864A0004783A4 /* GoogleService-Info.plist */,
 				38FE00721EE7D61700BD1A87 /* CCCocoaLumberJackManager.swift */,
 			);
 			name = Utility;
@@ -193,7 +193,7 @@
 			files = (
 				38ED4EDD1EB863EA004783A4 /* LaunchScreen.storyboard in Resources */,
 				38B128B31EC2EDDF00BDCE07 /* RemoteConfigDefaults.plist in Resources */,
-				38ED4EE51EB864A0004783A4 /* GoogleService-Info.plist in Resources */,
+				AAE46C001EEC24430045C0F7 /* GoogleService-Info.plist in Resources */,
 				38ED4EDA1EB863EA004783A4 /* Assets.xcassets in Resources */,
 				38ED4ED81EB863EA004783A4 /* Main.storyboard in Resources */,
 			);
