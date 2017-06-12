@@ -78,8 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         if url.scheme == "com.coincrypt.coincrypt.coinbase-oauth" {
-            let ccExchangeVC = self.window?.rootViewController as! CCExchangeOAuthViewController
-            ccExchangeVC.handleCoinbaseOAuthRedirect(url)
+            CCCoinbaseClient.sharedInstance.handleCoinbaseOAuthRedirect(url)
             return true
         }
         else {

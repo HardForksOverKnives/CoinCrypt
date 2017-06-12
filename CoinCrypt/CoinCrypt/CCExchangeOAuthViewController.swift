@@ -16,6 +16,20 @@ class CCExchangeOAuthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        NotificationCenter.default.addObserver(forName: .userDidAuthorizeCoinbase, object: nil, queue: OperationQueue.main) { (Notification) in
+            self.performSegue(withIdentifier: "exchangeOAuth_mainScreen", sender: self)
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        NotificationCenter.default.removeObserver(self)
+    }
 
 
     @IBAction func connectCoinbaseButtonPressed(_ sender: Any) {
@@ -27,21 +41,4 @@ class CCExchangeOAuthViewController: UIViewController {
         self.performSegue(withIdentifier: "exchangeOAuth_mainScreen", sender: self)
     }
     
-    func handleCoinbaseOAuthRedirect(_ url: URL) -> Void {
-        let clientID = FIRRemoteConfig.remoteConfig()[coinbase_client_id].stringValue
-        let clientSecret = FIRRemoteConfig.remoteConfig()[coinbase_client_secret].stringValue
-        CoinbaseOAuth.finishAuthentication(for: url, clientId: clientID, clientSecret: clientSecret, completion: { (result: Any?, error: Error?) in
-            if error != nil {
-                print("Coinbase OAuth failure")
-            }
-            else {
-                print("Coinbase Oauth success")
-                if let result = result as? [String : AnyObject] {
-                    if let accessToken = result["access_token"] as? String {
-                        
-                    }
-                }
-            }
-        })
-    }
 }
